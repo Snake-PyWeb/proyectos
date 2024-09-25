@@ -1,0 +1,22 @@
+{
+    "user1": {
+        "nombre_usuario": "julian",
+        "contra_usuario": "123",
+        "tel_recuperacion": "123"
+    },
+    "user2": {
+        "nombre_usuario": "santiago",
+        "contra_usuario": "123",
+        "tel_recuperacion": "55555"
+    },
+    "user3": {
+        "nombre_usuario": "gloria",
+        "contra_usuario": "123",
+        "tel_recuperacion": "123"
+    },
+    "user4": {
+        "nombre_usuario": "luis",
+        "contra_usuario": "123",
+        "tel_recuperacion": "123"
+    }
+}

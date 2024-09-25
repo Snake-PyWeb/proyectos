@@ -1,0 +1,22 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina principal que contiene ruta para el formulario de iniciar sesion y para registrarse">
+    <link rel="stylesheet" href="{%static 'css/style_index.css'%}">
+    <title> Home | Snake </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="container-enlaces">
+                <li><a href="{%url 'index'%}">Home</a></li>
+                <li><a href="{%url 'login'%}">Login</a></li>
+                <li><a href="{%url 'register'%}">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

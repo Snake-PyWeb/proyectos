@@ -1,0 +1,26 @@
+.container-enlaces{
+    display: flex;
+    justify-content: space-around;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.container-enlaces  a   {
+    text-decoration: none;
+    list-style: none;
+}
+
+.container-enlaces  a:hover{
+    text-decoration: underline;
+}
+
+ul{
+    list-style: none;
+}
+
+

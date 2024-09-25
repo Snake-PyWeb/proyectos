@@ -1,0 +1,56 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina principal que contiene ruta para el formulario de iniciar sesion">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'css/style_form.css'%}">
+    <title> Login | Snake </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="container-enlaces">
+                <li><a href="{%url 'index'%}">Home</a></li>
+                <li><a href="{%url 'login'%}">Login</a></li>
+                <li><a href="{%url 'register'%}">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="div-form">
+                <form action="{%url 'login'%}" method="post" class="form" >
+                    {% csrf_token %}
+
+                    <p class="form-title">Iniciar</p>
+                    <div class="input-container">
+                        <input type="text" autocomplete="off" placeholder="Usuario" name="nombre_usuario">
+                    </div>
+
+                    <div class="input-container">
+                        <input type="password" autocomplete="off"  placeholder="Contraseña" name="contra_usuario">
+                    </div>
+
+                    <button class="submit" type="submit">Iniciar</button>
+
+                    <p class="registro-enlace">¿No tienes Cuenta?<a href="">Registrate</a></p>
+
+                    {% if Error is not None%}
+                        <p>Error:{{Error}}</p>
+                    {% endif %}
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+
