@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Blogify </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{%url 'index'%}">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="" method="post">
+        {%csrf_token%}
+        {{form.as_p}} <!-- como estamos usando el admin de django si o si tiene que ir el nombre form por que asi se llama la variable que ellos le pusieron , cuando creemos nuestro login le podemos poner como queramos -->
+        <button type="submit">Login</button>
+    </form>
+    <p>¿No tienes una cuenta?<a href="{%url 'register'%}"></a>Sing up</p>
+</body>
+</html>

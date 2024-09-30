@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Blogify</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{%url 'index'%}">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="" method="post">
+        {%csrf_token%}
+        {{form_register.as_p}}
+        <button type="submit">Register</button>
+    </form>
+    <p>¿Ya tienes una cuenta?<a href="{%url 'login'%}">Login</a></p>
+</body>
+</html>
