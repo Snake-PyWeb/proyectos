@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        {%csrf_token%} <!-- Protección contra ataques CSRF -->
+        {{form.as_p}} <!-- El "form" viene del archivo "views.py" de la funcion register en la variable que se llama "form=" {{}} cuando se usan las llaves asi es por que se va mostrar algo que ya viene renderizado desde el archivo "views.py"  que en este caso si vamos a el estamos renderizando 'form':form es por eso que aca la ponemos form 
+        Cuando pones form.as_p el "as_p" quiere decir que el formulario que le pasaste lo imprima en parrafos <p>  haciendo que quede separado uno debajo de otro-->
+        <button type="submit">Iniciar Sesion</button>
+    </form>
+    <p><a href="{%url 'register'%}">¿ No tienes una cuenta ?</a>Registrtate aca</p>
+</body>
+</html>
